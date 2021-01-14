@@ -1,6 +1,6 @@
 {
-  "name": "react-draggable",
-  "version": "4.4.3",
+  "name": "react-draggable-yonyou",
+  "version": "1.0.0",
   "description": "React draggable component",
   "main": "build/cjs/cjs.js",
   "scripts": {
@@ -24,14 +24,14 @@
   "types": "./typings/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mzabriskie/react-draggable.git"
+    "url": "https://github.com/whalealice/react-draggable.git"
   },
   "keywords": [
     "react",
     "draggable",
     "react-component"
   ],
-  "author": "Matt Zabriskie",
+  "author": "baifan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mzabriskie/react-draggable/issues"
