@@ -1,6 +1,6 @@
 {
   "name": "react-draggable-yonyou",
-  "version": "100.0.0",
+  "version": "1.0.3",
   "description": "React draggable component",
   "main": "build/cjs/cjs.js",
   "scripts": {
