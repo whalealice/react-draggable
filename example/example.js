@@ -23,9 +23,11 @@ class App extends React.Component {
 
   onStart = () => {
     this.setState({activeDrags: ++this.state.activeDrags});
+    document.getElementById('xiaoyou').style.cssText = "width:100%;height:100%;position: absolute; top: 0; z-index:999999;"
   };
 
   onStop = () => {
+    document.getElementById('xiaoyou').style.cssText = ""
     this.setState({activeDrags: --this.state.activeDrags});
   };
 
@@ -59,14 +61,15 @@ class App extends React.Component {
     const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
     const {deltaPosition, controlledPosition} = this.state;
     return (
-      <div id="xiaoyou">
-        <h1>React Draggable</h1>
-        <p>Active DragHandlers: {this.state.activeDrags}</p>
-        <Draggable {...dragHandlers} >
-          <div className="box">I can be dragged anywhere</div>
-        </Draggable>
-      
-
+      <div style={{width: '100%', height:'100%'}}>
+        <div id="xiaoyou">
+          <Draggable {...dragHandlers} container="xiaoyou"
+            bounds={'body'}
+          >
+            <div className="box">I can be dragged anywhere</div>
+          </Draggable>
+        </div>
+        <button onClick={()=>alert('444')}>333</button>
       </div>
     );
   }
