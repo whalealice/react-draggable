@@ -9,3 +9,4 @@ git romete add upstream https://github.com/STRML/react-draggable 新建一个ups
 git fetch upstream 把upstream上的代码合并到自己分支
 
 git merge upstream/master  如果不是master分支就自行改动
+
